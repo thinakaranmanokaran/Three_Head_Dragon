@@ -53,7 +53,7 @@ const App = () => {
         : Dragons[currDragon].img
 
     return (
-        <div className="">
+        <div className="min-h-screen flex flex-col">
             {/* BG */}
             <img
                 src={images.BGForest}
@@ -61,8 +61,8 @@ const App = () => {
                 alt=""
             />
 
-            <div className="absolute z-10 mt-4 w-full">
-                <h1 className="font-title text-center text-6xl md:text-8xl lg:text-9xl text-shadow-orange-500 text-shadow-md text-white">
+            <div className="relative z-10 my-4 w-full flex-1">
+                <h1 className="font-title text-center text-6xl md:text-8xl lg:text-9xl text-shadow-orange-500 text-shadow-md text-white leading-12 mb-4 md:mb-0 md:leading-none">
                     Three Head Dragon
                 </h1>
 
@@ -83,7 +83,7 @@ const App = () => {
 
                 {/* IMAGE */}
                 <div className="mt-4 mx-2">
-                    <div className="flex justify-center h-60 md:h-90 items-center">
+                    <div className="flex justify-center h-full md:h-90 items-center">
                         <div className="flex justify-center bg-white/15 backdrop-blur-xs rounded-4xl  p-2 md:p-4 w-fit">
                             <img
                                 src={currentImg}
@@ -128,7 +128,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <footer className="fixed bottom-0 text-neutral-400 font-para text-center md:text-right px-2 w-full text-lg md:text-xl ">Developed by an <a href="https://thinakaran.dev/" className='text-white underline' target="_blank" rel="noopener noreferrer">Thinakaran Manokaran</a></footer>
+            <footer className="relative z-20 bottom-0 text-neutral-400 font-para text-center md:text-right px-2 w-full text-lg md:text-xl ">Developed by an <a href="https://thinakaran.dev/" className='text-white underline' target="_blank" rel="noopener noreferrer">Thinakaran Manokaran</a></footer>
         </div>
     )
 }
