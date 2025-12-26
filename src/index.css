@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Title;
+  src: url(./assets/fonts/title/mara2v2.ttf);
+}
+
+@font-face {
+  font-family: Para;
+  src: url(./assets/fonts/para/NorB.otf);
+}
+
+@theme{
+  --font-title: Title, "sans-serif";
+  --font-para: Para, "sans-serif"
+}
